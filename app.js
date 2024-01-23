@@ -17,3 +17,5 @@ const multipleModule = require('./multipleModule.js');
 console.log(multipleModule.foo);
 multipleModule.myFunction1();
 multipleModule.myFunction2();
+
+const fs = require('./fs_mkdir.js');
