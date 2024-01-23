@@ -11,3 +11,6 @@ fs.writeFile('./myFolder/myFile.txt', data, (err)=>{
         console.log('Writen to file successfully!!');
     }
 })
+
+console.log('hello world no. 1');
+console.log('hello world no. 2');
