@@ -1,7 +1,7 @@
 const EventEmitter = require('events');
 const myEmitter = new EventEmitter();
 
-const sayHello = () =>{
+function sayHello(){  //used function rather const
     console.log('Hello User!');
 }
 const sayHi = () => {
