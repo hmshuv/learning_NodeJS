@@ -1,13 +1,14 @@
-// Import the events module
+// Importing 'events' module and creating an instance of the EventEmitter Class
 const EventEmitter = require('events');
-
-// Create an instance of EventEmitter
 const myEmitter = new EventEmitter();
 
-// Listen for the 'userJoined' event
-myEmitter.on('userJoined', () => {
-    console.log('Welcome, new user!');
-});
+// Listener Function - welcomeUser()
+const welcomeUser = () => {
+    console.log('Hi There, Welcome to the server!');
+}
 
-// Emit the 'userJoined' event
+// Listening for the userJoined event using the on() method
+myEmitter.on('userJoined', welcomeUser);
+
+// Emitting the userJoined event using the emit() method
 myEmitter.emit('userJoined');
