@@ -1,3 +1,4 @@
+const EventEmitter = require('events');
 const messagingApp = new EventEmitter();
 
 // User joins event
